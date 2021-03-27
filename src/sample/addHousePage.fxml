@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="registrationSuccesfulLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="340.0" prefWidth="1004.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddHousePageController">
+   <children>
+      <Button fx:id="submitButton" layoutX="473.0" layoutY="287.0" mnemonicParsing="false" onAction="#submitButtonListener" text="SUBMIT" />
+      <Label fx:id="registrationUnsuccessful" layoutX="392.0" layoutY="234.0" text="Invalid entries, please check and try again">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="57.0" layoutY="191.0" prefHeight="17.0" prefWidth="121.0" text="Number Of Bedrooms" />
+      <Label layoutX="719.0" layoutY="193.0" text="Selling Price" />
+      <Label layoutX="390.0" layoutY="143.0" text="Number Of Bathrooms" />
+      <TextField fx:id="locationTextField" layoutX="203.0" layoutY="139.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="numberOfBedroomsTextField" layoutX="203.0" layoutY="187.0" prefHeight="25.0" prefWidth="154.0" />
+      <TextField fx:id="sellingPriceTextField" layoutX="806.0" layoutY="189.0" prefHeight="25.0" prefWidth="148.0" />
+      <TextField fx:id="numberOfBathroomsTextField" layoutX="536.0" layoutY="139.0" prefHeight="25.0" prefWidth="154.0" />
+      <Label layoutX="394.0" layoutY="191.0" text="Number Of Living Rooms" />
+      <TextField fx:id="numberOfLivingRoomsTextField" layoutX="540.0" layoutY="187.0" prefHeight="25.0" prefWidth="154.0" />
+      <Label layoutX="719.0" layoutY="143.0" text="Type" />
+      <TextField fx:id="typeTextField" layoutX="806.0" layoutY="139.0" prefHeight="25.0" prefWidth="148.0" />
+      <Label layoutX="394.0" layoutY="56.0" prefHeight="27.0" prefWidth="247.0" text="HOUSE REGISTRATION FORM">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="223.0" layoutY="287.0" mnemonicParsing="false" onAction="#backButtonListener" text="&lt;&lt; BACK" />
+      <Label fx:id="registrationSuccess" layoutX="425.0" layoutY="251.0" text="Registration was successful">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOutButton" layoutX="681.0" layoutY="287.0" mnemonicParsing="false" onAction="#logOutButtonListener" text="LOG OUT" />
+      <Label layoutX="57.0" layoutY="143.0" text="Location" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="registrationSuccesfulLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.registrationPageController">
+   <children>
+      <Button fx:id="submitButton" layoutX="428.0" layoutY="373.0" mnemonicParsing="false" onAction="#submitButtonListener" text="SUBMIT" />
+      <Label layoutX="57.0" layoutY="143.0" text="First Name" />
+      <Label layoutX="57.0" layoutY="193.0" prefHeight="17.0" prefWidth="81.0" text="Email Address" />
+      <Label layoutX="483.0" layoutY="193.0" text="Phone Number" />
+      <Label layoutX="57.0" layoutY="240.0" text="Sex" />
+      <TextField fx:id="firstNameTextField" layoutX="165.0" layoutY="139.0" prefHeight="25.0" prefWidth="264.0" />
+      <TextField fx:id="emailAddressTextField" layoutX="165.0" layoutY="189.0" prefHeight="25.0" prefWidth="264.0" />
+      <TextField fx:id="phoneNumberTextField" layoutX="591.0" layoutY="189.0" prefHeight="25.0" prefWidth="264.0" />
+      <TextField fx:id="sexTextField" layoutX="165.0" layoutY="236.0" prefHeight="25.0" prefWidth="36.0" />
+      <Label layoutX="57.0" layoutY="284.0" text="Address" />
+      <TextField fx:id="addressTextField" layoutX="165.0" layoutY="280.0" prefHeight="25.0" prefWidth="264.0" />
+      <Label layoutX="483.0" layoutY="143.0" text="Last Name" />
+      <TextField fx:id="lastNameTextField" layoutX="591.0" layoutY="139.0" prefHeight="25.0" prefWidth="264.0" />
+      <Label layoutX="483.0" layoutY="240.0" text="Birth Date" />
+      <Label layoutX="480.0" layoutY="284.0" text="State of Origin" />
+      <TextField fx:id="stateOfOriginTextField" layoutX="591.0" layoutY="280.0" prefHeight="25.0" prefWidth="264.0" />
+      <Label layoutX="367.0" layoutY="50.0" prefHeight="27.0" prefWidth="179.0" text="REGISTRATION FORM">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="44.0" layoutY="373.0" mnemonicParsing="false" onAction="#backButtonListener" text="&lt;&lt; BACK" />
+      <Label fx:id="registrationSuccess" layoutX="384.0" layoutY="339.0" text="Registration was successful">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOutButton" layoutX="788.0" layoutY="373.0" mnemonicParsing="false" onAction="#logOutButtonListener" text="LOG OUT" />
+      <DatePicker fx:id="birthDatePicker" layoutX="591.0" layoutY="236.0" onAction="#setBirthDatePicker" />
+   </children>
+</AnchorPane>
